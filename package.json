@@ -1,0 +1,17 @@
+{
+  "name": "astro-journal",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "astro-journal-backend",
+    "astro-journal-frontend"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm start --prefix astro-journal-backend\" \"npm start --prefix astro-journal-frontend\""
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "concurrently": "^7.2.1"
+  }
+}
